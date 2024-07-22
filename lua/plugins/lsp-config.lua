@@ -51,6 +51,10 @@ return {
                 capabilities = capabilities,
             })
 
+            lspconfig.lemminx.setup({
+                capabilities = capabilities,
+            })
+
             lspconfig.pyright.setup({
                 capabilities = capabilities,
             })
