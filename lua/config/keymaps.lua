@@ -4,8 +4,8 @@ vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
 vim.keymap.set("n", "<C-s>", ":w<CR>", { noremap = true, silent = true })
-vim.keymap.set("n", "<C-s>", ":q<CR>", { noremap = true, silent = true })
-vim.keymap.set('n', '<C-k-s>', ':wa<CR>', { noremap = true, silent = true })
+vim.keymap.set("n", "<C-q>", ":q<CR>", { noremap = true, silent = true })
+vim.keymap.set("n", "<C-a>", ":wa<CR>", { noremap = false, silent = false })
 
 -- Remove search highlights after searching
 vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>", { desc = "Remove search highlights" })
