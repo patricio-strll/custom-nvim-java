@@ -3,7 +3,7 @@ return {
         "williamboman/mason.nvim",
         opts = {
             ensure_installed = {
-                "clangd-format"
+                "codelldb",
             }
         },
         config = function()
@@ -46,7 +46,7 @@ return {
             local capabilities = require("plugins.config.lspconfig").capabilities
 
 
-            local servers = { "pyright", "clangd" }
+            local servers = { "pyright", "clangd", "lua_ls", "lemminx" }
 
             for _, lsp in pairs(servers) do
             	require("lspconfig")[lsp].setup({
